@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="bottom"
+                    android:text="What\nare\nyou\nlooking\nfor?" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hero"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fitness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/home_gradient_maths"
+                            android:padding="10dp">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_maths" />
+
+                            <TextView
+                                android:id="@+id/textViewSub1Title"
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="Fitness Centres" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:padding="10dp"
+                            android:background="@drawable/home_gradient_maths">
+                            <!--                            gl:end_color="@color/gradientLightYellow2"-->
+                            <!--                            gl:start_color="@color/gradientLightOrange2"-->
+                            <!--                            gl:orientation="LEFT_RIGHT"-->
+
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry"
+                                style="@style/homeCardImage"/>
+
+                            <TextView
+                                android:id="@+id/textViewSub3Title"
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="INN" />
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/home_gradient_maths"
+                            android:padding="10dp">
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_geography" />
+
+                            <TextView
+                                android:id="@+id/textViewSub5Title"
+                                android:text="Transport"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/home_gradient_maths"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry"
+                                style="@style/homeCardImage"/>
+
+                            <TextView
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="College Clubs" />
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:padding="10dp"
+                            android:background="@drawable/home_gradient_maths">
+                            <!--                            gl:start_color="@color/gradientLightYellow"-->
+                            <!--                            gl:end_color="@color/gradientOrange"-->
+                            <!--                            gl:orientation="LEFT_RIGHT"-->
+
+
+                            <ImageView
+                                style="@style/homeCardImage"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_physics" />
+
+                            <TextView
+                                android:id="@+id/textViewSub2Title"
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="Food" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/home_gradient_maths"
+                            android:padding="10dp">
+                            <!--                            gl:start_color="@color/gradientLightOrange2"-->
+                            <!--                            gl:end_color="@color/gradientOrange3"-->
+                            <!--                            gl:orientation="LEFT_RIGHT"-->
+
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_maths"
+                                style="@style/homeCardImage" />
+
+                            <TextView
+                                android:id="@+id/textViewSub4Title"
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                                android:text="Play Area" />
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/home_gradient_maths"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry"
+                                style="@style/homeCardImage" />
+
+                            <TextView
+                                android:id="@+id/textViewSub6Title"
+                                android:text="Lifestyle"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/home_gradient_maths"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_biology"
+                                style="@style/homeCardImage" />
+
+                            <TextView
+                                android:text="New Openings"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

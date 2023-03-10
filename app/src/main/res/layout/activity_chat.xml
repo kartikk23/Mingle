@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kartik.campusBuddy.ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/leftarrow"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_width="8dp"
+            app:civ_border_color= "@color/white"
+            android:src= "@drawable/user_icon"
+            android:layout_centerInParent= "true"
+            android:layout_width= "65dp"
+            android:layout_height= "50dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_UserName"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Geata Vishwas"
+            android:textColor="#0064B1"
+            android:textSize="15dp"
+            android:gravity="center|left"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chats_recView"
+        android:layout_width="409dp"
+        android:background="@drawable/recycler_bg"
+        android:layout_height="610dp"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/llChatBox"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <LinearLayout
+        android:id="@+id/llChatBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_shape"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="330dp"
+            android:id="@+id/etChat"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/btn_send"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_send_24"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

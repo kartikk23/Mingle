@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+
+    android:gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="15dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="499dp"
+                android:backgroundTint="@color/white"
+                android:rotation="90"
+                android:scaleType="fitXY"
+                app:shapeAppearanceOverlay="@style/Shape"
+                app:srcCompat="@drawable/user">
+
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/cardName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:paddingLeft="15dp"
+                android:textSize="20dp">
+
+            </TextView>
+            <Button
+                android:id="@+id/chat_btn"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="Chat"
+                android:background="@drawable/bg_button"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

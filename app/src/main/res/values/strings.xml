@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Campus Buddy</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_here_create_account">New Here? Create Account</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="already_joined_sign_in">Already Joined? Sign In</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="settings">Settings</string>
+    <string name="show_users">Show Users</string>
+
+    <string name="fcm"></string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="hello_there">Hello there !!!!</string>
+    <string name="already_joined_login_here">Already Joined? Login Here</string>
+</resources>
