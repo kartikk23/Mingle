@@ -40,24 +40,18 @@ public class ServiceDetailsActivity extends AppCompatActivity {
         String name = binding.etName.getText().toString();
         String price = binding.etPrice.getText().toString();
         
-        ServiceModel model = new ServiceModel(name, price);
 
-        HashMap<String, String> hashMap = new HashMap<>();
-        hashMap.put("id", userid);
-        hashMap.put("Name",name);
-        hashMap.put("price", String.valueOf(price));
-//        hashMap.put("status", "offline");
-//        hashMap.put("bio", "");
 
         binding.btnSubmit.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
-                reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                Toast.makeText(ServiceDetailsActivity.this, name+price, Toast.LENGTH_SHORT).show();
+                ServiceModel newService = new ServiceModel(userid, name, price);
+                reference.setValue(newService).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()){
-                            Toast.makeText(ServiceDetailsActivity.this, "Added Successfully!", Toast.LENGTH_SHORT).show();
-                        }
+                        Toast.makeText(ServiceDetailsActivity.this, "Added Successfully", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

@@ -93,7 +93,6 @@ public class LoginActivity extends AppCompatActivity {
                                             dialog.dismiss();
                                         }
                                         Toast.makeText(LoginActivity.this, "Authentication failed!", Toast.LENGTH_SHORT).show();
-
                                     }
                                 }
                             });

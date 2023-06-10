@@ -1,12 +1,19 @@
 package com.kartik.campusBuddy.Models;
 
 public class ServiceModel {
+    String userId;
     String name;
     String location;
     String price;
     String imageUrl1;
     String imageUrl2;
     String imageUrl3;
+
+    public ServiceModel(String userId, String name, String price) {
+        this.userId = userId;
+        this.name = name;
+        this.price = price;
+    }
 
     public ServiceModel(String name, String price) {
         this.name = name;

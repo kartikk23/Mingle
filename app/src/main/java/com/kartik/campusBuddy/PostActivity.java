@@ -93,6 +93,8 @@ public class PostActivity extends AppCompatActivity {
             }
         });
         readPosts();
+
+
     }
 
     private void readPosts() {
@@ -118,6 +120,8 @@ public class PostActivity extends AppCompatActivity {
 
             }
         });
+
+
 }
 
 
@@ -130,6 +134,7 @@ public class PostActivity extends AppCompatActivity {
         // Defining Implicit Intent to mobile gallery
         Intent intent = new Intent();
         intent.setType("image/*");
+
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(
                 Intent.createChooser(
@@ -242,5 +247,16 @@ public class PostActivity extends AppCompatActivity {
                                 }
                             });
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+
+
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
+
     }
 }
